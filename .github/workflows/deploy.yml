@@ -37,6 +37,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Inject financial metrics panel
+        run: node scripts/inject-metrics.mjs
+
       - name: Build Vite app
         run: npm run build
 
